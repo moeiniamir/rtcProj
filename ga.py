@@ -407,7 +407,7 @@ def main():
         
 
 
-        ga = GA_Scheduler(num_tasks, mutation_rate=0.1, crossover_rate=0.9, max_iter=1000)
+        ga = GA_Scheduler(num_tasks, mutation_rate=0.1, crossover_rate=0.9, max_iter=100)
         final_time, slack_time = ga.run(tasks)
         ga_results.append(final_time)
 
@@ -418,3 +418,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+#%%
+
+#%%
